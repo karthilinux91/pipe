@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('SQA-Blink-01') {
       steps {
-        build 'SQA-Blink-01'
+        build(job: 'SQA-Blink-01', propagate: true)
       }
     }
     stage('SQA-InjectError-02') {
