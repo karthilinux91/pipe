@@ -3,12 +3,12 @@ pipeline {
   stages {
     stage('SQA-Blink-01') {
       steps {
-        build(job: 'SQA-Blink-01', propagate: false)
+        build 'SQA-Blink-01'
       }
     }
     stage('SQA-InjectError-02') {
       steps {
-        build(job: 'SQA-InjectError-02', propagate: false)
+        build 'SQA-InjectError-02'
       }
     }
   }
